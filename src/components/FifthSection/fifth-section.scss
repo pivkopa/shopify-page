@@ -1,0 +1,134 @@
+.fifth-section {
+  &__main-container {
+    margin-top: 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include on-mobile {
+      flex-direction: column;
+      margin-top: 59px;
+    }
+  }
+
+  &__questions__title {
+    font-family: inherit;
+    font-size: 32px;
+    color: #01005B;
+
+    @include on-mobile {
+      width: 350px;
+      text-align: center;
+      font-size: 26px;
+    }
+  }
+
+  &__questions {
+    width: 630px;
+
+    @include on-mobile {
+      width: 350px;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+
+      &__item {
+        padding: 23px 21px 29px 0;
+        border-bottom: 1px solid #EAEAEA;
+        border-top: 1px solid #EAEAEA;
+        line-height: 23px;
+
+        &__title {
+          color: #01005B;
+          font-size: 18px;
+        }
+
+        &__container {
+          display: flex;
+          justify-content: space-between;
+          width: 565px;
+
+          @include on-mobile {
+            width: 350px;
+          }
+        }
+
+        &__text {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  &-button {
+    display: inline;
+    font-family: inherit;
+    background-color: #01005b;
+    width: 369px;
+    height: 56px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include on-mobile {
+      margin-top: 16px;
+    }
+
+    &-container-mobile {
+      display: none;
+
+      @include on-mobile {
+        display: inline;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__button-description {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 11px;
+  }
+
+  &__gallery {
+    position: relative;
+    width: 430px;
+    height: 600px;
+
+    @include on-mobile {
+      display: none;
+    }
+
+    &__left-picture {
+      width: 216px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__center-picture {
+      position: relative;
+      z-index: 2;
+      width: 227px;
+      margin: 129px 123px 151px 80px;;
+    }
+
+    &__right-picture {
+      width: 167px;
+      position: absolute;
+      top: 0;
+      right: 42px;
+    }
+  }
+}

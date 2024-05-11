@@ -1,0 +1,9 @@
+.container {
+  width: 1253px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include on-mobile {
+    width: 388px;
+  }
+}

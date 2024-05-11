@@ -1,0 +1,109 @@
+.third-section {
+  background-color: #f0eeef;
+
+  &-container {
+    padding-top: 83px;
+    padding-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include on-mobile {
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__gallery {
+    position: relative;
+    max-width: 524px;
+
+    &__left-picture {
+      width: 165px;
+      position: absolute;
+
+      @include on-mobile {
+        width: 101px;
+      }
+    }
+
+    &__center-picture {
+      width: 382px;
+      margin: 47px 65px 47px 77px;
+      
+      @include on-mobile {
+        width: 239px;
+      }
+    }
+
+    &__right-picture {
+      width: 129px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @include on-mobile {
+        width: 109px;
+      }
+    }
+  }
+
+  &__motivation-part {
+    width: 619px;
+
+    @include on-mobile {
+      width: 335px;
+    }
+
+    &__title{
+      color: #2A2996;
+      font-size: 32px;
+      font-family: inherit;
+      font-weight: 400;
+
+      @include on-mobile {
+        margin-bottom: 30px;
+      }
+
+      &-desktop {
+        @include on-mobile {
+          display: none;
+        }
+      }
+
+      &-mobile {
+        display: none;
+
+        @include on-mobile {
+          display: inline;
+        }
+      }
+    }
+
+    &__text {
+      margin-bottom: 20px;
+      margin-top: 30px;
+      font-size: 15px;
+      line-height: 23px;
+      font-family: inherit;
+      font-weight: 400;
+      color: #6C6C6C;
+    }
+
+    &__button {
+      font-size: 18px;
+      color: white;
+      background-color: #01005B;
+      border: none;
+      width: 356px;
+      height: 56px;
+      font-family: inherit;
+      border-radius: 5px;
+
+      @include on-mobile {
+        display: none;
+      }
+    }
+  }
+}
