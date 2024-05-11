@@ -7,6 +7,7 @@ For demo of this project you can visit [DEMO link](https://pivkopa.github.io/sho
 # Technologies used:
 - React
 - HTML/SCSS
+- BEM
 
 # How to get started
 Clone this repository, install dependencies, and launch this project.
